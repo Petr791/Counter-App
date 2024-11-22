@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Counter App</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Manrope:wght@200..800&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+	<div class="counter">
+		<div class="container">
+			<div class="counter-wrapper">
+				<p id="counter-value" class="counter__value" data-find="counterValue"></p>
+
+				<button type="button" id="btnIncreaseOne" class="counter__btn counter__btn--increase" data-pools="1">+1
+					Бассейн</button>
+
+				<button type="button" id="btnIncreaseTwo" class="counter__btn counter__btn--increase" data-pools="2">+2
+					Бассейн</button>
+
+				<button type="button" id="btn-reset" class="counter__btn counter__btn--reset">Сбросить</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="/js/jquery-3.7.0.min.js"></script>
+	<script src="/js/index.js"></script>
+</body>
+
+</html>

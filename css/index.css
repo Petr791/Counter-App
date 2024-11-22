@@ -1,0 +1,112 @@
+*,
+html,
+body {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.counter {
+    padding-top: 50px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.counter-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 36px;
+}
+
+.counter__value {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    color: #000000;
+}
+
+.counter__btn {
+    padding: 28px 20px;
+    width: 500px;
+    border-radius: 20px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    color: #ffffff;
+}
+
+
+/*  */
+
+.counter__btn--increase {
+    background-color: #4191FF;
+}
+
+.counter__btn--increase:active {
+    background-color: #0068f9;
+}
+
+.counter__btn--reset {
+    background-color: #D45366;
+}
+
+.counter__btn--reset:active {
+    background-color: #ff0328;
+}
+
+
+/* media queries */
+
+@media (hover: hover) {
+    .counter__btn--increase:hover {
+        background-color: #0068f9;
+    }
+    .counter__btn--reset:hover {
+        background-color: #ff0328;
+    }
+}
+
+@media (max-width: 1020px) {}
+
+@media (max-width: 961px) {}
+
+@media (max-width: 767px) {
+    .counter__btn {
+        padding: 22px 20px;
+        max-width: 300px;
+        border-radius: 15px;
+        font-size: 26px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 550px) {}
+
+@media (max-width: 375px) {
+    .counter-wrapper {
+        row-gap: 20px;
+    }
+    .counter__value {
+        line-height: 34px;
+    }
+    .counter__btn {
+        width: 100%;
+        border-radius: 10px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
