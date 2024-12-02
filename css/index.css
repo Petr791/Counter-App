@@ -47,6 +47,7 @@ button {
     font-weight: 700;
     line-height: 44px;
     color: #ffffff;
+    transition: all .3s linear;
 }
 
 
